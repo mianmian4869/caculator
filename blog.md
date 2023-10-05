@@ -27,7 +27,56 @@ Calculators need both front-end pages and back-end code to be implemented, and I
 ## Design and implementation process. The design includes how the code is organized and the flow chart of the key functions.
 ![organization of my code](https://github.com/mianmian4869/MyPostImage/blob/main/codeOrganize.jpg?raw=true)
 ## Code description. Show the key code of the project and explain the idea.
-
-## Displaying result functions with screenshots ((or gifs) and text descriptions.
+The most important code is how to realize the function of the calculator. 
+### %
+The output should be 0.01 times the input
+```
+mod.onclick=function(){ 
+        mid = Number(displays); 
+        displays=mid+'%';
+        result.innerHTML=mid/100; 
+    }
+```
+### +/-
+The output is the input multiplied by -1
+```
+bias.onclick=function(){
+        mid = Number(displays); 
+        displays=mid*(-1);
+        result.innerHTML=mid*(-1);
+    }
+```
+### =
+The input expression can be evaluated by using the built-in evaluation function eval() 
+```
+    equal.onclick=function(){
+        displays=eval(displays);//自带的计算函数
+        result.innerHTML=displays;
+    }
+```
+### AC
+Clear all values
+```
+AC.onclick=function(){
+        displays="";
+        result.innerHTML='0';
+    }
+```
+### .
+Each number can only have one decimal point, set a Boolean value to control, by changing the Boolean value to determine whether there is already a decimal point, if there is a decimal point, can not be used.
+```
+    dot.onclick=function(){
+        if(displays==""){
+            displays+='0.'
+            result.innerHTML=displays;
+        }
+        if(isDot==true){
+            displays+='.'
+            result.innerHTML=displays;
+        }
+        isDot=false;
+    }
+```
+## Displaying result functions with screenshots (or gifs) and text descriptions.
 
 ## Summarize this assignment.
