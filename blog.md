@@ -96,3 +96,10 @@ Each number can only have one decimal point, set a Boolean value to control, by 
 ### .
  ![dot](https://github.com/mianmian4869/MyPostImage/blob/main/%E5%B0%8F%E6%95%B0%E7%82%B9.png?raw=true)
 ## Summarize this assignment.
+- 1. The calculator interface: the calculator first needs a display screen, which can be divided into a separate block, and then the number and operator into a block.
+
+- 2. Function implementation:
+     - Design different click events.
+     - Consider the digital case first, we first get all the digital buttons, and then give the click event, click the button can be displayed in the display screen.
+     - In the case of operators, a decimal point can only occur once in a number, so we put a switch on the decimal point. Close after the execution of a click event, until the next number can continue to assign value
+     - Clear keys, percent signs and other functions are relatively simple.
