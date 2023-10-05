@@ -25,7 +25,7 @@ Calculators need both front-end pages and back-end code to be implemented, and I
 - Solution 2: Use JavaScript, the advantage is that the syntax is similar to JAVA, lightweight, front-end interface code implementation is simple and easy to understand. The disadvantage is never used, to learn. Based on the pros and cons of both options, I chose option two and started searching for simple JavaScript syntax in bilibili and CSDN.
 
 ## Design and implementation process. The design includes how the code is organized and the flow chart of the key functions.
-
+![organization of my code](https://github.com/mianmian4869/MyPostImage/blob/main/codeOrganize.jpg?raw=true)
 ## Code description. Show the key code of the project and explain the idea.
 
 ## Displaying result functions with screenshots ((or gifs) and text descriptions.
