@@ -78,5 +78,21 @@ Each number can only have one decimal point, set a Boolean value to control, by 
     }
 ```
 ## Displaying result functions with screenshots (or gifs) and text descriptions.
-
+### %
+- input:7%
+- output:0.07
+![result of %](https://github.com/mianmian4869/MyPostImage/blob/main/%E7%99%BE%E5%88%86%E5%8F%B7.png?raw=true)
+### +/-
+- input:2
+- output:-2
+![result of +/-](https://github.com/mianmian4869/MyPostImage/blob/main/%E5%8F%96%E5%8F%8D.png?raw=true)
+### =
+- input:3 + 6.1
+ ![input](https://github.com/mianmian4869/MyPostImage/blob/main/%E5%B0%8F%E6%95%B0%E7%82%B9.png?raw=true)
+- output:9.1
+![output](https://github.com/mianmian4869/MyPostImage/blob/main/%E7%BB%93%E6%9E%9C.png?raw=true)
+### AC
+![AC](https://github.com/mianmian4869/MyPostImage/blob/main/%E8%AE%A1%E7%AE%97%E5%99%A8.png?raw=true)
+### .
+ ![dot](https://github.com/mianmian4869/MyPostImage/blob/main/%E5%B0%8F%E6%95%B0%E7%82%B9.png?raw=true)
 ## Summarize this assignment.
