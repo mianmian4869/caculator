@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.calculator{
+    width: 200px;
+    border: 1px solid #000;
+}
+.result{
+    height: 50px;
+    background-color: rgb(192, 242, 255);
+    line-height: 50px;
+    font-size: 25px;
+    text-align: right;
+}
+.buttons{
+    display: flex;
+
+}
+button{
+    flex: 1;
+    height: 40px;
+}
+.buttons>div{
+display: flex;
+flex: 1;
+}
+</style>
+<body>
+    <div class="calculator">
+        <div class="result">0</div>
+        <div class="buttons">
+            <button class="AC">AC</button>
+            <button class="bias">+/-</button>
+            <button class="mod">%</button>
+            <button class="operator">/</button>
+        </div>
+        <div class="buttons">
+            <button class="number">7</button> 
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">*</button>
+        </div>
+        <div class="buttons">
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">-</button>
+        </div>
+        <div class="buttons">
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">+</button>
+        </div>
+        <div class="buttons">
+            <div>
+                <button class="number">0</button> 
+            </div>
+            <div>
+                <button class="dot">.</button>
+                <button class="equal">=</button>
+            </div>
+        </div>
+<script>
+    let numbers = document.querySelectorAll('.number');
+    let operators = document.querySelectorAll('.operator');
+    let result = document.querySelector('.result')
+    let AC=document.querySelector('.AC');
+    let dot=document.querySelector('.dot');
+    let equal=document.querySelector('.equal');
+    let mod=document.querySelector('.mod');
+    let bias =document.querySelector('.bias');
+
+    //用来控制只有一个点的开关
+    let isDot=true;
+
+    let displays="";
+//点击事件
+    for(i=0;i<numbers.length;i++){
+        let number = numbers[i];
+        number.onclick=function(){
+            displays+=this.innerHTML;
+            result.innerHTML=displays;
+        }
+    }
+//计算符
+    for(i=0;i<operators.length;i++){
+        let operator = operators[i];
+        operator.onclick=function(){
+            displays+=this.innerHTML;
+            result.innerHTML=displays;
+            isDot=true;
+        }
+    }
+//ac清空
+    AC.onclick=function(){
+        displays="";
+        result.innerHTML='0';
+    }
+//小数点
+    dot.onclick=function(){
+        if(displays==""){
+            displays+='0.'
+            result.innerHTML=displays;
+        }
+        if(isDot==true){
+            displays+='.'
+            result.innerHTML=displays;
+        }
+        isDot=false;
+    }
+//百分号
+    mod.onclick=function(){ 
+        mid = Number(displays); 
+        displays=mid+'%';
+        result.innerHTML=mid/100; 
+    }
+    //取反
+    bias.onclick=function(){
+        mid = Number(displays); 
+        displays=mid*(-1);
+        result.innerHTML=mid*(-1);
+    }
+//计算功能，等于号
+    equal.onclick=function(){
+        displays=eval(displays);//自带的计算函数
+        result.innerHTML=displays;
+    }
+
+
+</script>
+    </div>
+    
+</body>
+</html>
