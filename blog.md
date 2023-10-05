@@ -1,5 +1,15 @@
 # caculator
 A simple code for caculator by using js
+# information table
+| The Link Your Class |<[xinz](https://bbs.csdn.net/forums/ssynkqtd-04)> |
+ 
+| ----------------- |--------------- |
+ 
+| The Link of Requirement of This Assignment |<[xinz](https://bbs.csdn.net/topics/617332156) >|
+ 
+| The Aim of This Assignment | <Realize the basic function of calculator> |
+ 
+| MU STU ID and FZU STU ID | <21126763|832102110> |
 # PSP form
  | **Personal Software Process Stages**    | Estimated Time（minutes） | Actual Time（minutes） |
  | :-------------------------------------- | :------------------------ | :--------------------- |
